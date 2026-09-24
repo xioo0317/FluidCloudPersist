@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory
+        android:title="@string/category_basic">
+
+        <SwitchPreferenceCompat
+            android:key="module_enabled"
+            android:title="@string/enable_title"
+            android:summary="@string/enable_summary"
+            android:defaultValue="true" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="@string/category_advanced">
+
+        <SwitchPreferenceCompat
+            android:key="force_show"
+            android:title="@string/force_show_title"
+            android:summary="@string/force_show_summary"
+            android:defaultValue="true" />
+
+        <SwitchPreferenceCompat
+            android:key="landscape_only"
+            android:title="@string/landscape_only_title"
+            android:summary="@string/landscape_only_summary"
+            android:defaultValue="true" />
+
+    </PreferenceCategory>
+
+</PreferenceScreen>

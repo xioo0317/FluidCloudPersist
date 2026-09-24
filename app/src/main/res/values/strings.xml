@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">FluidCloud Persist</string>
+    <string name="module_title">流体云横屏常驻</string>
+    <string name="enable_title">启用模块</string>
+    <string name="enable_summary">开启后流体云胶囊将在横屏/沉浸模式下保持显示</string>
+    <string name="force_show_title">强制显示模式</string>
+    <string name="force_show_summary">当状态栏自动收起时强制保持流体云可见</string>
+    <string name="landscape_only_title">仅横屏模式</string>
+    <string name="landscape_only_summary">只在横屏/沉浸模式下生效，竖屏保持系统默认行为</string>
+    <string name="category_basic">基础设置</string>
+    <string name="category_advanced">高级设置</string>
+    <string name="module_not_activated">模块未激活，请在 Xposed/LSPosed 中启用本模块</string>
+    <string name="module_activated">模块已激活</string>
+    <string name="version_info">版本 %s</string>
+</resources>
