@@ -25,12 +25,6 @@ jobs:
         with:
           gradle-version: '8.9'
 
-      - name: Download Xposed API
-        run: |
-          mkdir -p app/libs
-          curl -fsSL "https://api.xposed.info/82/api-82.jar" -o app/libs/api-82.jar || \
-          curl -fsSL "https://github.com/rovo89/XposedBridgeArt/raw/master/lib/api-82.jar" -o app/libs/api-82.jar
-
       - name: Build Debug APK
         run: gradle assembleDebug --no-daemon
 
@@ -66,11 +60,6 @@ jobs:
         uses: gradle/actions/setup-gradle@v4
         with:
           gradle-version: '8.9'
-
-      - name: Download Xposed API
-        run: |
-          mkdir -p app/libs
-          curl -fsSL "https://api.xposed.info/82/api-82.jar" -o app/libs/api-82.jar
 
       - name: Build Release APK
         run: gradle assembleRelease --no-daemon
