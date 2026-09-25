@@ -25,6 +25,12 @@ jobs:
         with:
           gradle-version: '8.9'
 
+      - name: Download Xposed API jar
+        run: |
+          mkdir -p app/libs
+          curl -L -o app/libs/XposedBridgeAPI-82.jar \
+            https://github.com/bywhat/XposedBridgeApi/raw/main/XposedBridgeAPI-82.jar
+
       - name: Build Debug APK
         run: gradle assembleDebug --no-daemon
 
@@ -60,6 +66,12 @@ jobs:
         uses: gradle/actions/setup-gradle@v4
         with:
           gradle-version: '8.9'
+
+      - name: Download Xposed API jar
+        run: |
+          mkdir -p app/libs
+          curl -L -o app/libs/XposedBridgeAPI-82.jar \
+            https://github.com/bywhat/XposedBridgeApi/raw/main/XposedBridgeAPI-82.jar
 
       - name: Build Release APK
         run: gradle assembleRelease --no-daemon
