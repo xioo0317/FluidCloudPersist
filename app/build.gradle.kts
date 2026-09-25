@@ -35,7 +35,7 @@ android {
 }
 
 dependencies {
-    compileOnly(fileTree("libs") { include("*.jar") })
+    compileOnly("de.robv.android.xposed:api:82")
     implementation("androidx.core:core-ktx:1.15.0")
     implementation("androidx.appcompat:appcompat:1.7.0")
     implementation("androidx.preference:preference-ktx:1.2.1")
